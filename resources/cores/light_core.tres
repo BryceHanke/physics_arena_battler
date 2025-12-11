@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CoreResource" load_steps=2 format=3 uid="uid://dixg8c8k8yhb2"]
+
+[ext_resource type="Script" path="res://scripts/balls/core_resource.gd" id="1_rvyr3"]
+
+[resource]
+script = ExtResource("1_rvyr3")
+mass = 50.0
+com_offset = Vector3(0, 0.1, 0)
+magnetic_strength = 0.0

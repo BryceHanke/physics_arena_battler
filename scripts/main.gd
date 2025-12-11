@@ -6,6 +6,7 @@ const BattleBallData = preload("res://scripts/balls/battle_ball_data.gd")
 const DataFactory = preload("res://scripts/data_factory.gd")
 
 @export var ball_count: int = 10
+@export var launch_speed: float = 500.0
 
 var data_factory: DataFactory
 
@@ -41,4 +42,13 @@ func _ready():
 
 			ball.position = position
 			ball.apply_torque(torque)
+
+			# Calculate tangential impulse
+			var center_to_ball_xz = Vector3(position.x, 0, position.z)
+			if center_to_ball_xz.length() > 0: # Avoid division by zero if ball is at center
+				var tangent = Vector3(-center_to_ball_xz.z, 0, center_to_ball_xz.x).normalized()
+				var upward_component = Vector3(0, randf_range(0.2, 0.5), 0)
+				var launch_direction = (tangent + upward_component).normalized()
+				ball.apply_central_impulse(launch_direction * launch_speed)
+
 			add_child(ball)

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SpiritResource" load_steps=3 format=3 uid="uid://d3k5w4g3j3a1q"]
+
+[ext_resource type="Script" path="res://scripts/balls/spirit_resource.gd" id="1_rvyr3"]
+[ext_resource type="PackedScene" uid="uid://b5w5g5j5a5d5e" path="res://scenes/spirits/ethereal_wisp.tscn" id="2_abcde"]
+
+[resource]
+script = ExtResource("1_rvyr3")
+packed_scene = ExtResource("2_abcde")
+animation_track = "default"
+energy_cost = 50

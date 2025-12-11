@@ -1,0 +1,14 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1765417839
+icon.svg::CompressedTexture2D::9185290186672809092::1765416589::1765417844::1::::<><><>0<>0<>14a8eef900efeeeff6c419d3a4f5ab0e<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1765416673
+::res://scenes/::1765417840
+main.tscn::PackedScene::6962761966691467892::1765417840::0::1::::<><><>0<>0<><>::uid://c1u8qragaajwh::::res://scripts/main.gd
+::res://scripts/::1765417840
+ball_builder.gd::GDScript::2998170020247776317::1765417840::0::1::::BallBuilder<>Node<><>0<>0<><>::
+main.gd::GDScript::6641071983689587415::1765417840::0::1::::<>Node3D<><>0<>0<><>::
+::res://scripts/resources/::1765417840
+battle_ball_data.gd::GDScript::676943520983637337::1765417840::0::1::::BattleBallData<>Resource<><>0<>0<><>::
+core_resource.gd::GDScript::7645742683317487772::1765416590::0::1::::CoreResource<>Resource<><>0<>0<><>::
+shell_resource.gd::GDScript::1725309569870606681::1765417839::0::1::::ShellResource<>Resource<><>0<>0<><>::
+spirit_resource.gd::GDScript::1986298574193964437::1765416590::0::1::::SpiritResource<>Resource<><>0<>0<><>::

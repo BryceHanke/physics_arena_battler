@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6g2w4g3j3a1q"]
+
+[ext_resource type="Script" uid="uid://ctuqncrsxxkq6" path="res://scripts/main.gd" id="1_v4w0h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
+albedo_color = Color(0.5, 0.5, 0.5, 1)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_v4w0h")
+
+[node name="Floor" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10, 0)
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.298584, 0)
+size = Vector3(40, 8.597168, 40)
+material = SubResource("StandardMaterial3D_1")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.683845, 0)
+operation = 2
+radius = 18.194284
+material = SubResource("StandardMaterial3D_1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 20, 30)

@@ -6,8 +6,12 @@
 radius = 1.0
 height = 2.0
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_1"]
+radius = 1.0
+
 [resource]
 script = ExtResource("1_rvyr3")
 mesh = SubResource("SphereMesh_1")
+collider = SubResource("SphereShape3D_1")
 friction = 0.5
 bounce = 0.5

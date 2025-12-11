@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=4 uid="uid://d1j5w4g3j3a1q"]
+[gd_scene load_steps=6 format=4 uid="uid://doiykfbq5nwa4"]
 
 [ext_resource type="Script" uid="uid://ctuqncrsxxkq6" path="res://scripts/main.gd" id="1_v4w0h"]
-[ext_resource type="Script" path="res://scripts/camera/drone_camera.gd" id="2_wndv8"]
+[ext_resource type="Script" uid="uid://drflcr6m47013" path="res://scripts/camera/drone_camera.gd" id="2_wndv8"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_o5qli"]
 friction = 0.1
@@ -30,11 +30,12 @@ transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 20, 30)
-script = ExtResource("2_wndv8")
 transform = Transform3D(1, 0, 0, 0, 0.8660253, 0.50000024, 0, -0.50000024, 0.8660253, 0, 7.5024195, 28)
+script = ExtResource("2_wndv8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
+collision_layer = 3
+collision_mask = 3
 physics_material_override = SubResource("PhysicsMaterial_o5qli")
 
 [node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]

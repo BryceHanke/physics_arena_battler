@@ -6,9 +6,9 @@ class_name DroneCamera
 @export var sensitivity: float = 0.1
 @export var damping: float = 0.9
 
-private var _velocity: Vector3 = Vector3.ZERO
-private var _yaw: float = 0.0
-private var _pitch: float = 0.0
+var _velocity: Vector3 = Vector3.ZERO
+var _yaw: float = 0.0
+var _pitch: float = 0.0
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED

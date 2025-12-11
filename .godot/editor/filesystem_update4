@@ -1,5 +1,4 @@
 res://scenes/main.tscn
-res://scripts/main.gd
-res://scripts/resources/shell_resource.gd
-res://scripts/ball_builder.gd
-res://scripts/resources/battle_ball_data.gd
+res://scripts/camera/drone_camera.gd
+res://resources/shells/bouncy_shell.tres
+res://scripts/data_factory.gd

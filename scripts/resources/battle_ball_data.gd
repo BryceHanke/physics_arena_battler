@@ -6,3 +6,4 @@ class_name BattleBallData
 @export var shell_ref: ShellResource
 @export var spirit_ref: SpiritResource
 @export var ball_name: String = "Default Ball"
+@export var material: StandardMaterial3D

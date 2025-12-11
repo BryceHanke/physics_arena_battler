@@ -9,13 +9,13 @@ const ShellResource = preload("res://scripts/resources/shell_resource.gd")
 func _ready():
 	# 1. Create a placeholder Core
 	var core := CoreResource.new()
-	core.mass = 50.0
+	core.mass = 100.0
 	core.com_offset = Vector3(0, -0.2, 0) # Lower center of mass for stability
 
 	# 2. Create a placeholder Shell
 	var shell := ShellResource.new()
 	shell.friction = 0.6
-	shell.bounce = 0.4
+	shell.bounce = 1.0
 
 	# Create a simple sphere mesh and collider for the shell
 	var sphere_mesh := SphereMesh.new()

@@ -1,0 +1,25 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters might change variables in the editor.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Gyro-Clash"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+
+[physics]
+
+3d/physics_engine="Jolt"
+common/physics_ticks_per_second=120
+
+[rendering]
+
+renderer/rendering_method="forward_plus"

@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://c6g2w4g3j3a1q"]
+[gd_scene load_steps=7 format=4 uid="uid://d1j5w4g3j3a1q"]
 
 [ext_resource type="Script" uid="uid://ctuqncrsxxkq6" path="res://scripts/main.gd" id="1_v4w0h"]
+[ext_resource type="Script" path="res://scripts/camera/drone_camera.gd" id="2_wndv8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
 albedo_color = Color(0.5, 0.5, 0.5, 1)
@@ -43,3 +44,4 @@ shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 20, 30)
+script = ExtResource("2_wndv8")

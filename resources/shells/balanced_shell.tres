@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ShellResource" load_steps=3 format=3 uid="uid://d3j5w4g3j3a1q"]
+
+[ext_resource type="Script" path="res://scripts/balls/shell_resource.gd" id="1_rvyr3"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_1"]
+radius = 1.0
+height = 2.0
+
+[resource]
+script = ExtResource("1_rvyr3")
+mesh = SubResource("SphereMesh_1")
+friction = 0.5
+bounce = 0.5

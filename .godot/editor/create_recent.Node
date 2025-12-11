@@ -1,1 +1,4 @@
 StaticBody3D
+CSGSphere3D
+CSGBox3D
+CSGCombiner3D
